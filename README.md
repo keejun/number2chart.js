@@ -14,23 +14,3 @@ the function could get the formated dictionary data .you should not place any st
 3.您须输入如 var dictdata={"Beijing":34,"Hangzhou":22,"Shanghai":45,"Suzhou":60}的dict格式数据作为方法的接受参数，添加其方   法在引用的js脚本之后.注字典格式中的Value值需要为整数值，以便进行比例计算.
 
 4.您可以根据此js源代码进行改变，使其适合不同业务场合。
-
-
-附：
-   <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-  <html>
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>number2chart.js</title>
-   </head>
-   <body>
-                <div id="displaypie"></div>
-  </body>
-  <script  type="text/javascript" src="piechart.js" charset="utf-8"></script>
-  <script type="text/javascript">
-     var dictdata={"差":34,"较差":22,"还行":45,"推荐":60,"力荐":123};
-    chartpie(dictdata);
-</script>
-</html>
-demo显示：
-    
