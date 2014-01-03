@@ -15,6 +15,6 @@ the function could get the formated dictionary data .you should not place any st
 
 3.您须输入如 var dictdata={"Beijing":34,"Hangzhou":22,"Shanghai":45,"Suzhou":60}的dict格式数据作为方法的接受参数，添加其方   法在引用的js脚本之后.注字典格式中的Value值需要为整数值，以便进行比例计算.
 
-4. 为了图表的美观，在设置字典的key值长度时尽量设置为合适的需要,设置过长会导致部分字体遮挡.
+4.为了图表的美观，在设置字典的key值长度时尽量设置为合适的需要,设置过长会导致部分字体遮挡.
 
-4.您可以根据此js源代码进行改变，使其适合不同业务场合。
+5.您可以根据此js源代码进行改变，使其适合不同业务场合。
