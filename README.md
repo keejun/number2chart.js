@@ -1,5 +1,7 @@
 number2chart.js
-===============
+=============== 
+
+![alt tag](https://github.com/keejun/number2chart.js/blob/master/sample.png?raw=true)
 
 a funtion to display numbers in charts
 
