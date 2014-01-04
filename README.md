@@ -3,7 +3,7 @@ number2chart.js
 
 ![alt tag](https://github.com/keejun/number2chart.js/blob/master/sample.png?raw=true)
 
-a funtion to display numbers in charts
+a plugin to display numbers in charts
 
 you can follow this file named index.html , in this example, you should place the number2chart.js after the jquery elements,
 then, remember to place to div elements which id is "displaypie" or other,put it in anywhere that counld be correctly placed .
@@ -17,4 +17,4 @@ the function could get the formated dictionary data .you should not place any st
 
 4.为了图表的美观，在设置字典的key值长度时尽量设置为合适的需要,设置过长会导致部分字体遮挡.
 
-5.您可以根据此js源代码进行改变，使其适合不同业务场合。
+5.您可以根据此js进行改变，使其适合不同业务场合。
