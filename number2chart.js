@@ -1,7 +1,7 @@
 ﻿/**
 ﻿ * jQuery number2chart plugin
  *  Created by keejun on 13-12-31.
- *  Copyright (C) 2012 keejun 
+ *  Copyright (C) 2013 keejun 
  */
  (function (){
        function obj2string(o){
