@@ -5,8 +5,8 @@ number2chart.js
 
 a funtion to display numbers in charts
 
-you can follow this file named index.html , in this example, you should place the number2chart.js after the body elements,
-then, remember to place to div elements which id is "displaypie" ,put it in anywhere that counld be correctly placed .
+you can follow this file named index.html , in this example, you should place the number2chart.js after the jquery elements,
+then, remember to place to div elements which id is "displaypie" or other,put it in anywhere that counld be correctly placed .
 the function could get the formated dictionary data .you should not place any string which counld not be calculated in the value of the dictionary .  now ,play the function after the js reference ,and just to show charts .
 
 1.您可以按照index.html的实例，添加一个DIV元素此id值设置为“displaypie”，以适合大小的Size放在您认为适合的位置.
