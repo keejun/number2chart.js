@@ -1,6 +1,7 @@
 ﻿/**
  * Created by keejun on 13-12-31.
  */
+ (function (){
        function obj2string(o){
             var r=[];
             if(typeof o=="string"){
@@ -272,5 +273,5 @@ $.fn.extend({
             }
       }
 })
-
+})()
 
