@@ -1,5 +1,6 @@
 ﻿/**
  * Created by keejun on 13-12-31.
+ * copy right  keejun  
  */
  (function (){
        function obj2string(o){
