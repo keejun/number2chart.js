@@ -2,16 +2,21 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
+<script  type="text/javascript" src="number2chart.js" charset="utf-8"></script>
     <title>number2chart.js</title>
 </head>
 <body>
                 <div id="displaypie"></div>
                 <div id="displaybar"></div>
+                <div id="otherpie"></div>
 </body>
-<script  type="text/javascript" src="number2chart.js" charset="utf-8"></script>
+
 <script type="text/javascript">
-     var dictdata={"广州":113400,"上海":122220,"杭州":433512,"苏州":646041,"南昌":123001,"福州":12418};
-     number2chart.chartpie(dictdata);
-     number2chart.chartbar(dictdata);
+     var dictdata={"广州":11400,"上海":12220,"杭州":233512,"苏州":46041,"南昌":123001,"福州":12418};
+     var otherdictdata={"guangzhou":13434,"shanghai":23232,"hangzhou":43900,"suzhou":60000,"nanchang":23000,"fuzhou":33000};
+     $("#displaypie").chartpie(dictdata);
+     $("#displaybar").chartbar(dictdata);
+     $("#otherpie").chartpie(otherdictdata);
 </script>
 </html>
