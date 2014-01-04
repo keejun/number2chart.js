@@ -1,6 +1,7 @@
 ﻿/**
- * Created by keejun on 13-12-31.
- * copy right  keejun  
+﻿ * jQuery number2chart plugin
+ *  Created by keejun on 13-12-31.
+ *  Copyright (C) 2012 keejun 
  */
  (function (){
        function obj2string(o){
