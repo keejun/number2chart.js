@@ -3,7 +3,7 @@
  *  Created by keejun on 13-12-31.
  *  Copyright (C) 2013 keejun 
  */
- (function (){
+(function (){
        function obj2string(o){
             var r=[];
             if(typeof o=="string"){
@@ -28,24 +28,10 @@
             }
             return o.toString();
         }
-       var colorlib={
-            "mblue":"#1C86EE",
-            "dgreen":"#32CD32",
-            "dorange":"#DB570C",
-            "sblue":"#54FF9F",
-            "dpurple":"#9400D3",
-            "yellow":"#FFA500",
-            "scyan":"#00F5FF",
-            "lred":"#86173B",
-            "mgreen":"#90EE90",
-            "lblue":"#AEEEEE",
-            "lgreen":"#7FC712",
-            "lpurple":"#FF00FF",
-            "lblound":"#CDAD00",
-            "mgreenin":"#7CFC00",
-            "dblack":"#545454",
-            "bgray":"gray"
-        };
+       var colorlib={ "mblue":"#1C86EE", "dgreen":"#32CD32", "dorange":"#DB570C","sblue":"#54FF9F",  "dpurple":"#9400D3",  "yellow":"#FFA500",
+                      "scyan":"#00F5FF",  "lred":"#86173B",  "mgreen":"#90EE90","lblue":"#AEEEEE",  "lgreen":"#7FC712","lpurple":"#FF00FF", "lblound":"#CDAD00",
+                      "mgreenin":"#7CFC00","dblack":"#545454",   "bgray":"gray",   "RED":"red"
+                    };
        function getarraynumbers(numberlist){
         var regrex=/\{(\"?[\w|\d|\[\u4e00-\u9fa5\]]{1,}\"?\:\d{1,}\,?){1,}[^\W]\}/;
         var boolnumber=regrex.test(obj2string(numberlist));
@@ -97,15 +83,16 @@
             return percentarray;
         }
      }
-      // var number2chart=new Object();
+
        var chartobar=function(numberlist,displaycanvas){
          var funto= new getarraynumbers(numberlist);
         //创建canvas
+         var index=funto.numberindex.length;
          var canvas=document.createElement("canvas");
-        canvas.height=320;
-        canvas.width=520;
+        canvas.height=330;
+        canvas.width=(index+1)*50;
         var circlex=canvas.width/10;
-        var circley=canvas.height*5/6;
+        var circley=canvas.height*6/7;
         if(displaycanvas.hasChildNodes()){
             displaycanvas.innerHTML="";
         }
@@ -116,15 +103,16 @@
             context.moveTo(circlex,circley);
             context.lineTo(canvas.width,circley);
             context.moveTo(circlex,circley);
-            context.lineTo(circlex,0);
+            context.lineTo(circlex,-10);
             context.lineWidth=1;
-            context.strokeStyle="#ECC8C8";
+            context.strokeStyle="mediumseagreen";
             context.stroke();
             for(var i=0;i<10;i++){
+                context.fillStyle="mediumseagreen";
                 context.font="12px Microsoft YaHei";
                 context.fillText(i*10+"%",circlex-30,circley*(1-i/10));
             }
-                context.fillText("100%",circlex-34,10);
+                context.fillText("100%",circlex-34,9);
                 context.closePath();
         }
         var trangle={};
@@ -179,7 +167,6 @@
         canvas.width=420;
         var circlex=canvas.width/1.5;
         var circley=canvas.height/2;
-        console.log(displaycanvas);
     if(displaycanvas.hasChildNodes()){
         displaycanvas.innerHTML="";
     }
@@ -255,7 +242,7 @@ $.fn.extend({
               }
            }
          else{
-            return confirm("请使用id获取元素");
+            return confirm("please get the elements by ID");
            }
          },
       chartpie:function(numberlist){
@@ -271,9 +258,12 @@ $.fn.extend({
               }
           }
           else{
-               return confirm("请使用id获取元素");
+               return confirm("please get the elements by ID");
             }
       }
 })
 })()
+
+
+
 
